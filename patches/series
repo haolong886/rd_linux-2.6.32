@@ -1,0 +1,8 @@
+0001-linux-omap3-PSP-3.0.1.6-kernel-with-OCF-Linux.patch -p1
+0001-OMAP-DSS-Invert-pixel-clock-for-DVI-output.patch -p1
+0001-OMAP3-PM-Introduce-Smartreflex-support-on-OMAP3630.patch -p1
+0002-OMAP3630-PM-implement-Foward-Body-Bias-for-OPP1G.patch -p1
+0003-AM-DM3730-Change-default-VDD1-voltage-for-OPP1G-to.patch -p1
+0004-AM-DM3730-SR-Add-additional-voltage-margin-to-OPP.patch -p1
+0001-enable-mouse-support-in-defconfig-needed-by-Qt-appli.patch -p1
+0001-Kernel-BCH-4b8b-Error-Correction.patch -p1
