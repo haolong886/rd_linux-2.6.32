@@ -1,7 +1,7 @@
-/* This file is auto generated, version 10 */
+/* This file is auto generated, version 4 */
 #define UTS_MACHINE "arm"
-#define UTS_VERSION "#10 Tue Jul 24 09:03:12 CST 2012"
-#define LINUX_COMPILE_TIME "09:03:12"
+#define UTS_VERSION "#4 Fri Aug 17 15:44:17 CST 2012"
+#define LINUX_COMPILE_TIME "15:44:17"
 #define LINUX_COMPILE_BY "root"
 #define LINUX_COMPILE_HOST "coolhand-desktop"
 #define LINUX_COMPILE_DOMAIN

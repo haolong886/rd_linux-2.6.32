@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/entry-armv.o := arm-none-linux-gnueabi-gcc -Wp,-MD,arch/arm/kernel/.entry-armv.o.d  -nostdinc -isystem /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2       -c -o arch/arm/kernel/entry-armv.o arch/arm/kernel/entry-armv.S
+cmd_arch/arm/kernel/entry-armv.o := arm-none-linux-gnueabi-gcc -Wp,-MD,arch/arm/kernel/.entry-armv.o.d  -nostdinc -isystem /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2       -c -o arch/arm/kernel/entry-armv.o arch/arm/kernel/entry-armv.S
 
 deps_arch/arm/kernel/entry-armv.o := \
   arch/arm/kernel/entry-armv.S \
@@ -21,9 +21,9 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/has/tls/reg.h) \
     $(wildcard include/config/tls/reg/emul.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/unified.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/memory.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/highmem.h) \
     $(wildcard include/config/dram/size.h) \
@@ -44,12 +44,12 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/arch/omap4.h) \
     $(wildcard include/config/arch/omap15xx.h) \
     $(wildcard include/config/fb/omap/consistent/dma/size.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/sizes.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/glue.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
     $(wildcard include/config/cpu/abrt/ev4.h) \
     $(wildcard include/config/cpu/abrt/ev4t.h) \
@@ -60,9 +60,9 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/cpu/pabrt/legacy.h) \
     $(wildcard include/config/cpu/pabrt/v6.h) \
     $(wildcard include/config/cpu/pabrt/v7.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/vfpmacros.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/vfpmacros.h \
     $(wildcard include/config/vfpv3.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/vfp.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/vfp.h \
   arch/arm/mach-omap2/include/mach/entry-macro.S \
     $(wildcard include/config/multi/omap2.h) \
     $(wildcard include/config/arch/omap2420.h) \
@@ -89,11 +89,11 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/mach/omap/innovator.h) \
     $(wildcard include/config/twl4030/core.h) \
     $(wildcard include/config/gpio/twl4030.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/hardware/gic.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/thread_notify.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/unwind.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/hardware/gic.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/thread_notify.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/unwind.h \
     $(wildcard include/config/arm/unwind.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/unistd.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/unistd.h \
     $(wildcard include/config/oabi/compat.h) \
   arch/arm/kernel/entry-header.S \
     $(wildcard include/config/frame/pointer.h) \
@@ -101,18 +101,18 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/v6.h) \
   include/linux/linkage.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/linkage.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/assembler.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/linkage.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/ptrace.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/hwcap.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/ptrace.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/hwcap.h \
   include/asm/asm-offsets.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/errno.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/thread_info.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/fpstate.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/fpstate.h \
 
 arch/arm/kernel/entry-armv.o: $(deps_arch/arm/kernel/entry-armv.o)
 

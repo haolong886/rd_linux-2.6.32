@@ -1,1 +1,0 @@
-cmd_drivers/usb/gadget/g_ether.ko := arm-none-linux-gnueabi-ld -EL -r  -T /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/scripts/module-common.lds --build-id -o drivers/usb/gadget/g_ether.ko drivers/usb/gadget/g_ether.o drivers/usb/gadget/g_ether.mod.o

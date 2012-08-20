@@ -13,7 +13,7 @@
 @	compiled by GNU C version 4.3.2, GMP version 4.2.4, MPFR version 2.3.2.
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc -Iinclude
-@ -I/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include
+@ -I/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include
 @ -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -iprefix
 @ /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/
 @ -isysroot
@@ -393,16 +393,16 @@ main:
 	.text
 .Letext0:
 	.file 2 "include/asm-generic/int-ll64.h"
-	.file 3 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/posix_types.h"
+	.file 3 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/posix_types.h"
 	.file 4 "include/linux/types.h"
 	.file 5 "include/linux/capability.h"
 	.file 6 "include/linux/thread_info.h"
 	.file 7 "include/linux/time.h"
-	.file 8 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/fpstate.h"
-	.file 9 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/thread_info.h"
-	.file 10 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/system.h"
+	.file 8 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/fpstate.h"
+	.file 9 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/thread_info.h"
+	.file 10 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/system.h"
 	.file 11 "include/linux/sched.h"
-	.file 12 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/processor.h"
+	.file 12 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/processor.h"
 	.file 13 "include/linux/list.h"
 	.file 14 "include/linux/spinlock_types_up.h"
 	.file 15 "include/linux/spinlock_types.h"
@@ -415,15 +415,15 @@ main:
 	.file 22 "include/linux/wait.h"
 	.file 23 "include/linux/kernel.h"
 	.file 24 "include/linux/completion.h"
-	.file 25 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/page.h"
+	.file 25 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/page.h"
 	.file 26 "include/linux/mm_types.h"
-	.file 27 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/mmu.h"
+	.file 27 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/mmu.h"
 	.file 28 "include/linux/slab_def.h"
 	.file 29 "include/linux/mm.h"
 	.file 30 "include/asm-generic/cputime.h"
 	.file 31 "include/linux/rcupdate.h"
 	.file 32 "include/linux/sem.h"
-	.file 33 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/signal.h"
+	.file 33 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/signal.h"
 	.file 34 "include/asm-generic/signal-defs.h"
 	.file 35 "include/asm-generic/siginfo.h"
 	.file 36 "include/linux/signal.h"
@@ -443,7 +443,7 @@ main:
 	.file 50 "include/linux/cred.h"
 	.file 51 "include/linux/workqueue.h"
 	.file 52 "include/linux/vmstat.h"
-	.file 53 "/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/hwcap.h"
+	.file 53 "/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/hwcap.h"
 	.file 54 "include/linux/timex.h"
 	.file 55 "include/linux/gfp.h"
 	.file 56 "include/linux/debug_locks.h"
@@ -9868,6 +9868,8 @@ main:
 	.ascii	"used_cp\000"
 .LASF133:
 	.ascii	"utimescaled\000"
+.LASF710:
+	.ascii	"/usr/src/rd_board/rd_linux-2.6.32\000"
 .LASF287:
 	.ascii	"vm_mm\000"
 .LASF555:
@@ -10040,9 +10042,6 @@ main:
 	.ascii	"cpu_domain\000"
 .LASF415:
 	.ascii	"inotify_devs\000"
-.LASF710:
-	.ascii	"/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sd"
-	.ascii	"k\000"
 .LASF243:
 	.ascii	"__wait_queue_head\000"
 .LASF502:

@@ -1,4 +1,4 @@
-cmd_arch/arm/mm/proc-v7.o := arm-none-linux-gnueabi-gcc -Wp,-MD,arch/arm/mm/.proc-v7.o.d  -nostdinc -isystem /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2       -c -o arch/arm/mm/proc-v7.o arch/arm/mm/proc-v7.S
+cmd_arch/arm/mm/proc-v7.o := arm-none-linux-gnueabi-gcc -Wp,-MD,arch/arm/mm/.proc-v7.o.d  -nostdinc -isystem /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2       -c -o arch/arm/mm/proc-v7.o arch/arm/mm/proc-v7.S
 
 deps_arch/arm/mm/proc-v7.o := \
   arch/arm/mm/proc-v7.S \
@@ -8,7 +8,7 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/arm/errata/458693.h) \
     $(wildcard include/config/arm/errata/460075.h) \
     $(wildcard include/config/cpu/endian/be8.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/unified.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
     $(wildcard include/config/thumb2/kernel.h) \
   include/linux/init.h \
@@ -20,19 +20,19 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
   include/linux/linkage.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/linkage.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/assembler.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/linkage.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
     $(wildcard include/config/trace/irqflags.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/ptrace.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/hwcap.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/hwcap.h \
   include/asm/asm-offsets.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/pgtable-hwdef.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/pgtable.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/pgtable-hwdef.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
   include/asm-generic/4level-fixup.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/proc-fns.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/proc-fns.h \
     $(wildcard include/config/cpu/32.h) \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm7tdmi.h) \
@@ -58,7 +58,7 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/cpu/mohawk.h) \
     $(wildcard include/config/cpu/v6.h) \
     $(wildcard include/config/cpu/v7.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/memory.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/highmem.h) \
     $(wildcard include/config/dram/size.h) \
@@ -74,7 +74,7 @@ deps_arch/arm/mm/proc-v7.o := \
     $(wildcard include/config/arch/omap4.h) \
     $(wildcard include/config/arch/omap15xx.h) \
     $(wildcard include/config/fb/omap/consistent/dma/size.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/sizes.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
@@ -82,9 +82,9 @@ deps_arch/arm/mm/proc-v7.o := \
   arch/arm/mach-omap2/include/mach/vmalloc.h \
   arch/arm/mm/proc-macros.S \
     $(wildcard include/config/cpu/dcache/writethrough.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/thread_info.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/fpstate.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
 

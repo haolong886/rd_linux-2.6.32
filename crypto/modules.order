@@ -1,4 +1,0 @@
-kernel/crypto/ecb.ko
-kernel/crypto/pcbc.ko
-kernel/crypto/aes_generic.ko
-kernel/crypto/ansi_cprng.ko

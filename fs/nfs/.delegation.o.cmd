@@ -1,4 +1,4 @@
-cmd_fs/nfs/delegation.o := arm-none-linux-gnueabi-gcc -Wp,-MD,fs/nfs/.delegation.o.d  -nostdinc -isystem /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -marm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-stack-protector -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(delegation)"  -D"KBUILD_MODNAME=KBUILD_STR(nfs)"  -c -o fs/nfs/.tmp_delegation.o fs/nfs/delegation.c
+cmd_fs/nfs/delegation.o := arm-none-linux-gnueabi-gcc -Wp,-MD,fs/nfs/.delegation.o.d  -nostdinc -isystem /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include -Iinclude  -I/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include -include include/linux/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Os -marm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-stack-protector -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow   -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(delegation)"  -D"KBUILD_MODNAME=KBUILD_STR(nfs)"  -c -o fs/nfs/.tmp_delegation.o fs/nfs/delegation.c
 
 deps_fs/nfs/delegation.o := \
   fs/nfs/delegation.c \
@@ -24,37 +24,37 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/types.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/bitsperlong.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/posix_types.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/processor.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/posix_types.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/processor.h \
     $(wildcard include/config/mmu.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/ptrace.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
     $(wildcard include/config/smp.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/hwcap.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/cache.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/hwcap.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/system.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/system.h \
     $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/32v6k.h) \
   include/linux/linkage.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/linkage.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/linkage.h \
   include/linux/irqflags.h \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/irqflags.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/irqflags.h \
   include/asm-generic/cmpxchg-local.h \
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
@@ -70,18 +70,18 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/generic/find/first/bit.h) \
     $(wildcard include/config/generic/find/last/bit.h) \
     $(wildcard include/config/generic/find/next/bit.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/bitops.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/bitops.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/fls64.h \
   include/asm-generic/bitops/sched.h \
   include/asm-generic/bitops/hweight.h \
   include/asm-generic/bitops/lock.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/thread_info.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/fpstate.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/domain.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
@@ -98,18 +98,18 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
     $(wildcard include/config/arch/has/ilog2/u64.h) \
   include/linux/dynamic_debug.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/byteorder.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/swab.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/bug.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/div64.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/div64.h \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
@@ -121,12 +121,12 @@ deps_fs/nfs/delegation.o := \
   include/linux/spinlock_up.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_up.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/atomic.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/atomic.h \
   include/asm-generic/atomic-long.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/current.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/current.h \
   include/linux/kthread.h \
   include/linux/err.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/errno.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   include/linux/sched.h \
@@ -172,7 +172,7 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/debug/stack/usage.h) \
     $(wildcard include/config/group/sched.h) \
     $(wildcard include/config/mm/owner.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/param.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
   include/linux/capability.h \
   include/linux/threads.h \
@@ -186,7 +186,7 @@ deps_fs/nfs/delegation.o := \
   include/linux/seqlock.h \
   include/linux/math64.h \
   include/linux/param.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/timex.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/timex.h \
   arch/arm/mach-omap2/include/mach/timex.h \
   arch/arm/plat-omap/include/plat/timex.h \
     $(wildcard include/config/omap/32k/timer.h) \
@@ -199,7 +199,7 @@ deps_fs/nfs/delegation.o := \
   include/linux/bitmap.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/string.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/string.h \
   include/linux/errno.h \
   include/linux/nodemask.h \
     $(wildcard include/config/highmem.h) \
@@ -213,7 +213,7 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/proc/fs.h) \
     $(wildcard include/config/mmu/notifier.h) \
   include/linux/auxvec.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/auxvec.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/auxvec.h \
   include/linux/prio_tree.h \
   include/linux/rwsem.h \
     $(wildcard include/config/rwsem/generic/spinlock.h) \
@@ -221,7 +221,7 @@ deps_fs/nfs/delegation.o := \
   include/linux/page-debug-flags.h \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/page/debug/something/else.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/page.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -230,7 +230,7 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/sparsemem.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/glue.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/glue.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm710.h) \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
@@ -243,7 +243,7 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/cpu/pabrt/legacy.h) \
     $(wildcard include/config/cpu/pabrt/v6.h) \
     $(wildcard include/config/cpu/pabrt/v7.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/memory.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
     $(wildcard include/config/dram/size.h) \
@@ -259,30 +259,30 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/arch/omap4.h) \
     $(wildcard include/config/arch/omap15xx.h) \
     $(wildcard include/config/fb/omap/consistent/dma/size.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/sizes.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
   include/asm-generic/getorder.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/mmu.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/mmu.h \
     $(wildcard include/config/cpu/has/asid.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/cputime.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/cputime.h \
   include/asm-generic/cputime.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
   include/linux/sem.h \
   include/linux/ipc.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/ipcbuf.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/sembuf.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/ipcbuf.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/sembuf.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/tree/rcu.h) \
     $(wildcard include/config/tiny/rcu.h) \
   include/linux/rcutree.h \
   include/linux/signal.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/signal.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/signal.h \
   include/asm-generic/signal-defs.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/sigcontext.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/siginfo.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/sigcontext.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/linux/path.h \
   include/linux/pid.h \
@@ -330,7 +330,7 @@ deps_fs/nfs/delegation.o := \
   include/linux/topology.h \
     $(wildcard include/config/sched/smt.h) \
     $(wildcard include/config/sched/mc.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/topology.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/topology.h \
   include/asm-generic/topology.h \
   include/linux/mmdebug.h \
     $(wildcard include/config/debug/virtual.h) \
@@ -344,7 +344,7 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/event/tracing.h) \
   include/linux/kmalloc_sizes.h \
   include/linux/pfn.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/percpu.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
@@ -358,7 +358,7 @@ deps_fs/nfs/delegation.o := \
   include/linux/plist.h \
     $(wildcard include/config/debug/pi/list.h) \
   include/linux/resource.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/resource.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/resource.h \
   include/asm-generic/resource.h \
   include/linux/timer.h \
     $(wildcard include/config/timer/stats.h) \
@@ -395,19 +395,19 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/constructors.h) \
   include/linux/stat.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/stat.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/stat.h \
   include/linux/kmod.h \
   include/linux/elf.h \
   include/linux/elf-em.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/elf.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/user.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/elf.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/user.h \
   include/linux/moduleparam.h \
     $(wildcard include/config/alpha.h) \
     $(wildcard include/config/ia64.h) \
     $(wildcard include/config/ppc64.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/local.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/local.h \
   include/asm-generic/local.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/module.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/module.h \
     $(wildcard include/config/arm/unwind.h) \
   include/trace/events/module.h \
   include/linux/smp_lock.h \
@@ -422,8 +422,8 @@ deps_fs/nfs/delegation.o := \
   include/linux/magic.h \
   include/linux/in.h \
   include/linux/socket.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/socket.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/sockios.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/socket.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/sockios.h \
   include/linux/sockios.h \
   include/linux/mm.h \
     $(wildcard include/config/ksm.h) \
@@ -431,10 +431,10 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/hibernation.h) \
   include/linux/debug_locks.h \
     $(wildcard include/config/debug/locking/api/selftests.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/pgtable.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
   include/asm-generic/4level-fixup.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/proc-fns.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/proc-fns.h \
     $(wildcard include/config/cpu/32.h) \
     $(wildcard include/config/cpu/arm7tdmi.h) \
     $(wildcard include/config/cpu/arm720t.h) \
@@ -454,9 +454,9 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/cpu/feroceon.h) \
     $(wildcard include/config/cpu/v6.h) \
     $(wildcard include/config/cpu/v7.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/cpu-single.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/cpu-single.h \
   arch/arm/mach-omap2/include/mach/vmalloc.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/pgtable-hwdef.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/pgtable-hwdef.h \
   include/asm-generic/pgtable.h \
   include/linux/page-flags.h \
     $(wildcard include/config/pageflags/extended.h) \
@@ -480,7 +480,7 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/migration.h) \
   include/linux/limits.h \
   include/linux/ioctl.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/ioctl.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/ioctl.h \
   include/asm-generic/ioctl.h \
   include/linux/kdev_t.h \
   include/linux/dcache.h \
@@ -498,30 +498,30 @@ deps_fs/nfs/delegation.o := \
   include/linux/sunrpc/msg_prot.h \
   include/linux/inet.h \
   include/linux/fcntl.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/fcntl.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
   include/linux/highmem.h \
     $(wildcard include/config/debug/highmem.h) \
   include/linux/uaccess.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/uaccess.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/unified.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/uaccess.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/cacheflush.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/cacheflush.h \
     $(wildcard include/config/cpu/cache/v3.h) \
     $(wildcard include/config/cpu/cache/v4.h) \
     $(wildcard include/config/cpu/cache/v4wb.h) \
     $(wildcard include/config/outer/cache.h) \
     $(wildcard include/config/cpu/cache/vipt.h) \
     $(wildcard include/config/arm/errata/411920.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/shmparam.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/cachetype.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/shmparam.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/cachetype.h \
     $(wildcard include/config/cpu/cache/vivt.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/kmap_types.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/kmap_types.h \
   include/linux/hardirq.h \
   include/linux/ftrace_irq.h \
     $(wildcard include/config/ftrace/nmi/enter.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/hardirq.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/irq.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/hardirq.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/irq.h \
   arch/arm/mach-omap2/include/mach/irqs.h \
   arch/arm/plat-omap/include/plat/irqs.h \
     $(wildcard include/config/mach/omap/innovator.h) \
@@ -553,14 +553,14 @@ deps_fs/nfs/delegation.o := \
   include/linux/sunrpc/sched.h \
   include/linux/sunrpc/types.h \
   include/linux/sunrpc/xdr.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/unaligned.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/unaligned.h \
   include/linux/unaligned/le_byteshift.h \
   include/linux/unaligned/be_byteshift.h \
   include/linux/unaligned/generic.h \
   include/linux/scatterlist.h \
     $(wildcard include/config/debug/sg.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/scatterlist.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/io.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/scatterlist.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/io.h \
   arch/arm/mach-omap2/include/mach/io.h \
   arch/arm/plat-omap/include/plat/io.h \
   include/linux/sunrpc/clnt.h \
@@ -600,7 +600,7 @@ deps_fs/nfs/delegation.o := \
   include/linux/ratelimit.h \
   include/linux/textsearch.h \
   include/net/checksum.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/checksum.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/checksum.h \
   include/linux/dmaengine.h \
     $(wildcard include/config/dma/engine.h) \
     $(wildcard include/config/async/tx/dma.h) \
@@ -613,7 +613,7 @@ deps_fs/nfs/delegation.o := \
   include/linux/pm.h \
     $(wildcard include/config/pm/sleep.h) \
     $(wildcard include/config/pm/runtime.h) \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/device.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/device.h \
     $(wildcard include/config/dmabounce.h) \
   include/linux/pm_wakeup.h \
     $(wildcard include/config/pm.h) \
@@ -621,7 +621,7 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/have/dma/attrs.h) \
   include/linux/dma-attrs.h \
   include/linux/bug.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/dma-mapping.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/dma-mapping.h \
   include/asm-generic/dma-coherent.h \
     $(wildcard include/config/have/generic/dma/coherent.h) \
   include/linux/netdevice.h \
@@ -648,7 +648,7 @@ deps_fs/nfs/delegation.o := \
   include/linux/if_ether.h \
   include/linux/if_packet.h \
   include/linux/delay.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/delay.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/delay.h \
   include/linux/ethtool.h \
   include/net/net_namespace.h \
     $(wildcard include/config/ip/dccp.h) \
@@ -697,14 +697,14 @@ deps_fs/nfs/delegation.o := \
     $(wildcard include/config/securityfs.h) \
   include/linux/binfmts.h \
   include/linux/shm.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/shmbuf.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/shmbuf.h \
   include/linux/msg.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/msgbuf.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/msgbuf.h \
   include/net/flow.h \
   include/linux/filter.h \
   include/linux/rculist_nulls.h \
   include/linux/poll.h \
-  /usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include/asm/poll.h \
+  /usr/src/rd_board/rd_linux-2.6.32/arch/arm/include/asm/poll.h \
   include/asm-generic/poll.h \
   include/net/dst.h \
     $(wildcard include/config/net/cls/route.h) \

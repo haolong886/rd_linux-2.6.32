@@ -505,10 +505,6 @@ static int omap_dss_probe(struct platform_device *pdev)
 		DSSERR("Failed to initialize DSS\n");
 		goto fail0;
 	}
-//added by haolong 2012/03/22
-	printk(KERN_INFO "this is omap_dss_probe\n");
-//	delay(10);
-//---------------------------
 #ifdef CONFIG_OMAP2_DSS_RFBI
 	r = rfbi_init();
 	if (r) {

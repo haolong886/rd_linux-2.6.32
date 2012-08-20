@@ -1,7 +1,7 @@
 /*
  * Automatically generated C config: don't edit
  * Linux kernel version: 2.6.32
- * Tue Jul 17 15:32:45 2012
+ * Fri Aug 17 15:44:06 2012
  */
 #define AUTOCONF_INCLUDED
 #define CONFIG_USB_MUSB_HDRC 1
@@ -86,7 +86,6 @@
 #define CONFIG_SUNRPC_GSS 1
 #define CONFIG_FLAT_NODE_MEM_MAP 1
 #define CONFIG_VFAT_FS 1
-#define CONFIG_LOCALVERSION_AUTO 1
 #define CONFIG_USB_ETH_MODULE 1
 #define CONFIG_EMBEDDED 1
 #define CONFIG_GENERIC_ACL 1
@@ -193,6 +192,7 @@
 #define CONFIG_FRAMEBUFFER_CONSOLE_ROTATION 1
 #define CONFIG_FB_CFB_FILLRECT 1
 #define CONFIG_HAVE_GENERIC_DMA_COHERENT 1
+#define CONFIG_INPUT_EVDEV 1
 #define CONFIG_YAFFS_XATTR 1
 #define CONFIG_USB_SUSPEND 1
 #define CONFIG_HAS_TLS_REG 1

@@ -13,7 +13,7 @@
 @	compiled by GNU C version 4.3.2, GMP version 4.2.4, MPFR version 2.3.2.
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc -Iinclude
-@ -I/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sdk/arch/arm/include
+@ -I/usr/src/rd_board/rd_linux-2.6.32/arch/arm/include
 @ -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -iprefix
 @ /root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/
 @ -isysroot
@@ -459,15 +459,14 @@ foo:
 	.ascii	"ZONE_MOVABLE\000"
 .LASF9:
 	.ascii	"long int\000"
+.LASF49:
+	.ascii	"/usr/src/rd_board/rd_linux-2.6.32\000"
 .LASF46:
 	.ascii	"__MAX_NR_ZONES\000"
 .LASF44:
 	.ascii	"ZONE_NORMAL\000"
 .LASF20:
 	.ascii	"PG_arch_1\000"
-.LASF49:
-	.ascii	"/usr/local/dvsdk/psp/linux-2.6.32-psp03.00.01.06.sd"
-	.ascii	"k\000"
 .LASF19:
 	.ascii	"PG_owner_priv_1\000"
 .LASF1:

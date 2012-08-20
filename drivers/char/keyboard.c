@@ -1336,24 +1336,15 @@ static int kbd_connect(struct input_handler *handler, struct input_dev *dev,
 	struct input_handle *handle;
 	int error;
 	int i;
-//added by haolong, 2012/04/18
-	printk(KERN_ERR "######this is kbd_connect 1######\n");
-//-----------------------------
 	for (i = KEY_RESERVED; i < BTN_MISC; i++)
 		if (test_bit(i, dev->keybit))
 			break;
 
 	if (i == BTN_MISC && !test_bit(EV_SND, dev->evbit))
 		return -ENODEV;
-//added by haolong, 2012/04/18
-        printk(KERN_ERR "######this is kbd_connect 2######\n");
-//-----------------------------
 	handle = kzalloc(sizeof(struct input_handle), GFP_KERNEL);
 	if (!handle)
 		return -ENOMEM;
-//added by haolong, 2012/04/18
-        printk(KERN_ERR "######this is kbd_connect 3######\n");
-//-----------------------------
 	handle->dev = dev;
 	handle->handler = handler;
 	handle->name = "kbd";
@@ -1365,9 +1356,6 @@ static int kbd_connect(struct input_handler *handler, struct input_dev *dev,
 	error = input_open_device(handle);
 	if (error)
 		goto err_unregister_handle;
-//added by haolong, 2012/04/18
-        printk(KERN_ERR "######this is kbd_connect 4######\n");
-//-----------------------------
 	return 0;
 
  err_unregister_handle:
