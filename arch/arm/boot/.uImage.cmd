@@ -1,1 +1,0 @@
-cmd_arch/arm/boot/uImage := /bin/sh /usr/src/rd_board/rd_linux-2.6.32/scripts/mkuboot.sh -A arm -O linux -T kernel -C none -a 0x80008000 -e 0x80008000 -n 'Linux-2.6.32' -d arch/arm/boot/zImage arch/arm/boot/uImage

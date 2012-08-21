@@ -1,1 +1,0 @@
-cmd_drivers/video/omap2/dss/omapdss.o := arm-none-linux-gnueabi-ld -EL    -r -o drivers/video/omap2/dss/omapdss.o drivers/video/omap2/dss/core.o drivers/video/omap2/dss/dss.o drivers/video/omap2/dss/dispc.o drivers/video/omap2/dss/dpi.o drivers/video/omap2/dss/display.o drivers/video/omap2/dss/manager.o drivers/video/omap2/dss/overlay.o 
